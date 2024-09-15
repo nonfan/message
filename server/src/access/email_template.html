@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>验证码</title>
+    <style>
+      .wrap {
+        width: 100%;
+        height: 100%;
+        background-color: #f6f6f6;
+        display: flex;
+      }
+      .container {
+        width: 400px;
+        height: 370px;
+        background-color: #fff;
+        margin: auto;
+        border-radius: 5px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        padding: 50px;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .title {
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="container">
+        <div class="title" style="font-size: 30px">神秘的Message</div>
+        <div class="title" style="font-size: 25px">注册验证码</div>
+        <div class="content">
+          <p>
+            尊敬的用户： <br /><br />您的邮箱验证代码为:
+            <b id="verification_code"></b>，请在网页中填写，完成验证。
+            (本验证代码在5分钟之内有效)
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+.login-container {
+  height: 100%;
+  display: flex;
+  width: calc(100vw - 400px);
+  margin: auto;
+  justify-content: center;
+
+  .left {
+    flex: 3;
+    background: no-repeat right url('../../../public/static/loginBg.jpg');
+    background-size: 120%;
+  }
+
+  .login {
+    flex: 2;
+    min-width: 100px;
+    width: 200px !important;
+    margin: auto;
+    input {
+      width: 100%;
+      height: 50px;
+      background-color: #f1f5fd;
+    }
+
+    button {
+      height: 50px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      margin-top: 35px;
+    }
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .left {
+    display: none;
+  }
+}
